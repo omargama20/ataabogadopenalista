@@ -1,0 +1,1017 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Abogado Penalista en CDMX – David Ata | Atención inmediata 24/7</title>
+  <meta name="description" content="Abogado penalista en CDMX. Atención inmediata 24/7. Defensa penal: detenciones, audiencias, medidas cautelares/prisión preventiva, juicio oral y amparo. CDMX, EdoMex y atención nacional." />
+
+  <!-- Font (similar vibe a sitios fintech/tech) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- FAQ Schema (bueno para SEO) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {"@type":"Question","name":"¿Atiendes urgencias 24/7?","acceptedAnswer":{"@type":"Answer","text":"Sí. Para urgencias (detención o audiencia próxima), escribe por WhatsApp o llama."}},
+      {"@type":"Question","name":"¿Atiendes CDMX y Estado de México?","acceptedAnswer":{"@type":"Answer","text":"Sí, con sede en CDMX y atención frecuente en EdoMex. También atención nacional según el caso."}},
+      {"@type":"Question","name":"¿Qué tipo de casos atiendes?","acceptedAnswer":{"@type":"Answer","text":"Defensa penal: detenciones, audiencias, medidas cautelares/prisión preventiva, juicio oral, carpeta de investigación y amparo penal."}}
+    ]
+  }
+  </script>
+
+  <style>
+    :root{
+      --accent:#2563EB;
+      --accent2:#1D4ED8;
+      --ink:#0B1220;
+      --paper:#F7FAFF;
+      --muted:#617087;
+      --border:rgba(11,18,32,.10);
+      --shadow:0 22px 70px rgba(11,18,32,.14);
+
+      --wrap:1320px; /* +ancho pro */
+      --r:18px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:Manrope,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      color:var(--ink);
+      background:
+        radial-gradient(1100px 620px at 18% 0%, rgba(37,99,235,.10), transparent 60%),
+        radial-gradient(900px 520px at 85% 10%, rgba(11,18,32,.06), transparent 55%),
+        var(--paper);
+    }
+    a{color:inherit;text-decoration:none}
+    .wrap{max-width:var(--wrap);margin:0 auto;padding:0 28px}
+    .muted{color:var(--muted)}
+    .w100{width:100%}
+
+    /* Header */
+    .header{
+      position:fixed;top:0;left:0;right:0;z-index:60;
+      transition:all .2s ease;
+    }
+    .header.isSolid{
+      backdrop-filter: blur(12px);
+      background: rgba(247,250,255,.82);
+      border-bottom: 1px solid rgba(11,18,32,.08);
+    }
+    .header__inner{
+      display:flex;align-items:center;justify-content:space-between;
+      padding:14px 0;gap:16px;
+    }
+    .brand{display:flex;gap:12px;align-items:center;min-width:260px}
+    .brand__mark{
+      width:44px;height:44px;border-radius:14px;
+      display:flex;align-items:center;justify-content:center;
+      font-weight:800;letter-spacing:.6px;
+      color:#fff;
+      background: rgba(11,18,32,.92);
+      box-shadow: 0 10px 22px rgba(11,18,32,.18);
+    }
+    .brand__txt{display:flex;flex-direction:column;line-height:1.1}
+    .brand__name{font-weight:800;letter-spacing:.2px}
+    .brand__sub{font-size:12px;color:var(--muted);margin-top:2px}
+
+    .nav{display:flex;gap:14px;align-items:center}
+    .nav a{
+      font-size:13px;font-weight:800;color:rgba(11,18,32,.78);
+      padding:10px 10px;border-radius:999px;
+      transition:background .15s ease;
+    }
+    .nav a:hover{background:rgba(11,18,32,.05)}
+    .hdrCtas{display:flex;gap:10px;align-items:center}
+
+    .btn{
+      display:inline-flex;align-items:center;justify-content:center;
+      border-radius:999px;
+      padding:11px 16px;
+      font-weight:800;font-size:14px;
+      border:1px solid rgba(11,18,32,.12);
+      transition:transform .12s ease, box-shadow .12s ease, background .12s ease;
+      user-select:none;
+      white-space:nowrap;
+    }
+    .btn:active{transform:translateY(1px)}
+    .btn--lg{padding:14px 18px;font-size:15px}
+
+    .btn--primary{
+      background:var(--accent);
+      color:#fff;
+      border-color:rgba(37,99,235,.35);
+      box-shadow:0 16px 44px rgba(11,18,32,.12);
+    }
+    .btn--primary:hover{background:var(--accent2)}
+    .btn--ghost{
+      background:rgba(255,255,255,.85);
+      color:var(--ink);
+    }
+    .btn--ghost:hover{box-shadow:0 12px 34px rgba(11,18,32,.12)}
+    .btn--glass{
+      background:rgba(255,255,255,.10);
+      color:#fff;
+      border-color:rgba(255,255,255,.20);
+    }
+
+    .burger{
+      display:none;
+      width:44px;height:44px;border-radius:14px;
+      border:1px solid rgba(11,18,32,.12);
+      background:rgba(255,255,255,.75);
+      align-items:center;justify-content:center;
+      flex-direction:column;gap:5px;
+    }
+    .burger span{width:18px;height:2px;border-radius:999px;background:rgba(11,18,32,.85)}
+    .mobile{display:none}
+    .mobile.show{
+      display:block;
+      background:rgba(247,250,255,.92);
+      border-top:1px solid rgba(11,18,32,.08);
+      backdrop-filter: blur(12px);
+    }
+    .mobile__inner{padding:10px 0 18px;display:flex;flex-direction:column;gap:10px}
+    .mLink{
+      padding:14px 14px;border-radius:16px;
+      background:#fff;border:1px solid rgba(11,18,32,.10);
+      font-weight:900;color:rgba(11,18,32,.92);
+    }
+    .mCtas{display:grid;gap:10px;margin-top:6px}
+
+    /* HERO (tu imagen) */
+    .hero{
+      position:relative;
+      min-height:86vh;
+      padding:120px 0 34px;
+      display:flex;
+      align-items:flex-end;
+      color:#fff;
+      background:
+        linear-gradient(180deg, rgba(11,18,32,.20) 0%, rgba(11,18,32,.70) 70%, rgba(11,18,32,.90) 100%),
+        url("https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1920,fit=crop/mP4NBPxryVczyX20/legal-A3QJB4RbWktgZDab.jpg");
+      background-size:cover;
+      background-position:center;
+      overflow:hidden;
+    }
+    .hero::before{
+      content:"";
+      position:absolute;inset:0;
+      background:
+        radial-gradient(1200px 620px at 14% 10%, rgba(37,99,235,.22), transparent 60%),
+        radial-gradient(900px 520px at 85% 0%, rgba(255,255,255,.10), transparent 55%);
+      pointer-events:none;
+    }
+    .hero__grid{
+      position:relative;z-index:2;
+      display:grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap:26px;
+      align-items:end;
+    }
+    .kicker{
+      font-size:12px;
+      letter-spacing:.22em;
+      text-transform:uppercase;
+      opacity:.88;
+      font-weight:800;
+    }
+    h1{
+      margin:14px 0 14px;
+      font-size:58px;
+      line-height:1.03;
+      letter-spacing:-.03em;
+      font-weight:900;
+    }
+    .hl{
+      position:relative;display:inline-block;
+    }
+    .hl::after{
+      content:"";
+      position:absolute;left:-6px;right:-6px;bottom:8px;
+      height:12px;border-radius:999px;
+      background:rgba(37,99,235,.42);
+      z-index:-1;
+    }
+    .lead{
+      margin:0;
+      font-size:16.5px;
+      line-height:1.85;
+      color:rgba(255,255,255,.88);
+      font-weight:400;
+      max-width:78ch;
+    }
+    .hero__ctas{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}
+
+    /* “Flotante” tipo trust bar */
+    .chips{
+      display:flex;gap:10px;flex-wrap:wrap;
+      margin-top:18px;
+      font-weight:800;font-size:13px;
+      color:rgba(255,255,255,.86);
+    }
+    .chip{
+      display:inline-flex;align-items:center;gap:8px;
+      padding:10px 12px;border-radius:999px;
+      border:1px solid rgba(255,255,255,.18);
+      background:rgba(255,255,255,.08);
+      backdrop-filter: blur(10px);
+    }
+    .dot{
+      width:8px;height:8px;border-radius:999px;background:var(--accent);
+      box-shadow:0 0 0 6px rgba(37,99,235,.10);
+    }
+
+    /* Panel “solo botones” (sin formulario) */
+    .heroPanel{
+      border-radius:22px;
+      background:rgba(255,255,255,.10);
+      border:1px solid rgba(255,255,255,.20);
+      box-shadow: 0 22px 70px rgba(0,0,0,.22);
+      backdrop-filter: blur(12px);
+      padding:18px;
+    }
+    .panelTitle{font-weight:950}
+    .panelSub{margin-top:8px;font-size:13px;color:rgba(255,255,255,.82);line-height:1.6;font-weight:600}
+    .panelBtns{margin-top:14px;display:grid;gap:10px}
+    .hint{
+      margin-top:10px;
+      font-size:12px;
+      color:rgba(255,255,255,.78);
+      line-height:1.5;
+      font-weight:600;
+    }
+
+    /* Metrics */
+    .metrics{
+      background:#fff;
+      border-bottom:1px solid rgba(11,18,32,.08);
+    }
+    .metrics__inner{
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:18px;
+      padding:22px 0;
+      text-align:center;
+      align-items:center;
+    }
+    .metricN{font-size:28px;font-weight:950;letter-spacing:-.02em}
+    .metricL{margin-top:6px;font-size:13px;color:var(--muted);font-weight:800}
+
+    /* Sections */
+    .section{padding:72px 0}
+    .head{
+      display:flex;align-items:flex-end;justify-content:space-between;
+      gap:18px;margin-bottom:18px;
+    }
+    .head h2{margin:0;font-size:40px;font-weight:950;letter-spacing:-.03em}
+    .head p{margin:0;color:var(--muted);max-width:68ch;line-height:1.7;font-weight:600}
+
+    /* Services */
+    .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:18px}
+    .card{
+      border-radius:18px;
+      border:1px solid rgba(11,18,32,.10);
+      background:#fff;
+      box-shadow:0 14px 40px rgba(11,18,32,.06);
+      padding:18px;
+      transition:transform .12s ease, box-shadow .12s ease, border-color .12s ease;
+    }
+    .card:hover{
+      transform: translateY(-2px);
+      box-shadow:0 20px 60px rgba(11,18,32,.10);
+      border-color: rgba(37,99,235,.18);
+    }
+    .cardTop{display:flex;align-items:center;justify-content:space-between;gap:10px}
+    .icon{
+      width:42px;height:42px;border-radius:14px;
+      display:flex;align-items:center;justify-content:center;
+      background:rgba(37,99,235,.10);
+      color:var(--accent);
+      font-weight:900;
+    }
+    .tag{
+      font-size:12px;font-weight:950;color:rgba(11,18,32,.70);
+      padding:8px 10px;border-radius:999px;
+      border:1px solid rgba(11,18,32,.10);
+      background:rgba(247,250,255,.9);
+    }
+    .card h3{margin:12px 0 6px;font-size:16px;font-weight:950}
+    .card p{margin:0;color:var(--muted);line-height:1.65;font-size:14px;font-weight:600}
+
+    /* Proceso (formal, como el que te gustó “antes”) */
+    .alt{
+      background:rgba(11,18,32,.03);
+      border-top:1px solid rgba(11,18,32,.06);
+      border-bottom:1px solid rgba(11,18,32,.06);
+    }
+    .steps{
+      margin-top:18px;
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:18px;
+    }
+    .stepN{font-weight:950;color:var(--accent);letter-spacing:.12em}
+    .stepT{margin-top:8px;font-weight:950}
+    .stepP{margin-top:6px;color:var(--muted);line-height:1.7;font-weight:600}
+
+    /* Testimonios carrusel flotante */
+    .carouselWrap{
+      position:relative;
+      margin-top:18px;
+      border-radius:22px;
+      background:
+        radial-gradient(900px 460px at 20% 30%, rgba(37,99,235,.10), transparent 55%),
+        #fff;
+      border:1px solid rgba(11,18,32,.10);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+    .carouselHeader{
+      padding:18px 18px 0;
+      display:flex;align-items:flex-end;justify-content:space-between;gap:14px;
+    }
+    .carouselHeader .left{
+      font-weight:950;
+      letter-spacing:-.02em;
+    }
+    .carouselHeader .right{
+      color:var(--muted);
+      font-weight:700;
+      font-size:13px;
+    }
+    .carousel{
+      display:flex;
+      transition: transform .6s ease;
+      will-change: transform;
+    }
+    .slide{
+      min-width:100%;
+      padding:18px;
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:14px;
+      align-items:stretch;
+    }
+    .quote{
+      border-radius:18px;
+      border:1px solid rgba(11,18,32,.10);
+      background:rgba(247,250,255,.75);
+      padding:16px;
+    }
+    .stars{color:var(--accent);letter-spacing:.14em;font-weight:950;font-size:12px}
+    .quote p{margin:10px 0 0;color:rgba(11,18,32,.86);line-height:1.75;font-weight:600}
+    .who{margin-top:12px;font-weight:950;font-size:13px}
+    .who span{color:var(--muted);font-weight:800}
+
+    .dots{
+      padding:0 18px 18px;
+      display:flex;gap:8px;justify-content:center;
+    }
+    .dotBtn{
+      width:10px;height:10px;border-radius:999px;
+      border:1px solid rgba(11,18,32,.20);
+      background:rgba(11,18,32,.08);
+      cursor:pointer;
+    }
+    .dotBtn.active{
+      background:var(--accent);
+      border-color:rgba(37,99,235,.35);
+    }
+
+    /* FAQ */
+    .faq{margin-top:18px;border-top:1px solid rgba(11,18,32,.10)}
+    .q{
+      width:100%;text-align:left;
+      padding:16px 0;border:0;background:transparent;
+      border-bottom:1px solid rgba(11,18,32,.10);
+      font-weight:950;cursor:pointer;
+      display:flex;align-items:center;justify-content:space-between;
+    }
+    .a{padding:0 0 16px 0;color:var(--muted);line-height:1.85;font-weight:650}
+    .chev{opacity:.7}
+
+    /* Contact */
+    .contact{
+      padding:84px 0;
+      background:
+        radial-gradient(1100px 560px at 18% 10%, rgba(37,99,235,.10), transparent 60%),
+        linear-gradient(180deg, rgba(11,18,32,.04), rgba(11,18,32,.02));
+      border-top:1px solid rgba(11,18,32,.08);
+    }
+    .contactGrid{
+      display:grid;
+      grid-template-columns: 1.05fr .95fr;
+      gap:18px;
+      align-items:start;
+    }
+    .ctaBox{
+      border-radius:22px;
+      border:1px solid rgba(11,18,32,.10);
+      background:#fff;
+      box-shadow: var(--shadow);
+      padding:18px;
+    }
+    .ctaTitle{font-weight:950}
+    .ctaSub{margin-top:8px;color:var(--muted);line-height:1.7;font-weight:650}
+    .ctaBtns{margin-top:14px;display:flex;gap:10px;flex-wrap:wrap}
+
+    /* Footer */
+    .footer{background:#0B1220;color:rgba(255,255,255,.82);padding:22px 0}
+    .footer__inner{display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap}
+    .links{display:flex;gap:14px;flex-wrap:wrap}
+    .links a{font-weight:900;font-size:13px;opacity:.9}
+    .links a:hover{opacity:1;text-decoration:underline}
+
+    /* Floating */
+    .fab{
+      position:fixed;right:18px;
+      width:54px;height:54px;border-radius:18px;
+      display:flex;align-items:center;justify-content:center;
+      font-size:20px;
+      border:1px solid rgba(255,255,255,.18);
+      box-shadow:0 18px 44px rgba(11,18,32,.20);
+      z-index:80;
+    }
+    .fab--wa{bottom:18px;background:#0B1220;color:#fff}
+    .fab--call{bottom:80px;background:#fff;color:#0B1220;border-color:rgba(11,18,32,.12)}
+
+    /* Modal (para armar mensaje a WhatsApp sin backend) */
+    .modalBackdrop{
+      position:fixed;inset:0;
+      background:rgba(11,18,32,.55);
+      display:none;
+      align-items:center;
+      justify-content:center;
+      padding:18px;
+      z-index:90;
+    }
+    .modalBackdrop.show{display:flex}
+    .modal{
+      width:min(560px, 100%);
+      border-radius:22px;
+      background:#fff;
+      border:1px solid rgba(11,18,32,.10);
+      box-shadow:0 30px 90px rgba(0,0,0,.30);
+      overflow:hidden;
+    }
+    .modalTop{
+      padding:16px 18px;
+      display:flex;align-items:center;justify-content:space-between;
+      border-bottom:1px solid rgba(11,18,32,.08);
+      background:rgba(247,250,255,.9);
+    }
+    .modalTitle{font-weight:950}
+    .x{
+      width:40px;height:40px;border-radius:12px;
+      border:1px solid rgba(11,18,32,.12);
+      background:#fff;
+      cursor:pointer;
+      font-weight:950;
+    }
+    .modalBody{padding:18px;display:grid;gap:10px}
+    .modalBody input,.modalBody textarea{
+      width:100%;
+      border-radius:14px;
+      border:1px solid rgba(11,18,32,.12);
+      background:#fff;
+      padding:12px 12px;
+      font:inherit;
+      font-weight:700;
+      outline:none;
+    }
+    .modalBody textarea{min-height:110px;resize:vertical}
+    .modalBody input:focus,.modalBody textarea:focus{
+      border-color: rgba(37,99,235,.45);
+      box-shadow:0 0 0 7px rgba(37,99,235,.12);
+    }
+    .modalActions{padding:0 18px 18px;display:flex;gap:10px;flex-wrap:wrap}
+
+    /* Responsive */
+    @media (max-width: 1020px){
+      .nav,.hdrCtas{display:none}
+      .burger{display:flex}
+      .hero__grid{grid-template-columns:1fr}
+      h1{font-size:46px}
+      .metrics__inner{grid-template-columns:repeat(2,1fr)}
+      .grid3{grid-template-columns:repeat(2,1fr)}
+      .steps{grid-template-columns:1fr}
+      .slide{grid-template-columns:1fr}
+      .contactGrid{grid-template-columns:1fr}
+    }
+    @media (max-width: 560px){
+      .wrap{padding:0 18px}
+      h1{font-size:38px}
+      .grid3{grid-template-columns:1fr}
+      .metrics__inner{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+
+<body>
+
+<header class="header" id="header">
+  <div class="wrap header__inner">
+    <a class="brand" href="#top">
+      <span class="brand__mark">DA</span>
+      <span class="brand__txt">
+        <span class="brand__name">Ata Defensa Penal</span>
+        <span class="brand__sub">David Ata • CDMX / EdoMex • Atención nacional</span>
+      </span>
+    </a>
+
+    <nav class="nav" aria-label="Secciones">
+      <a href="#servicios">Servicios</a>
+      <a href="#proceso">Proceso</a>
+      <a href="#opiniones">Opiniones</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+
+    <div class="hdrCtas">
+      <a class="btn btn--ghost" href="tel:+5215619953751">Llamar ahora</a>
+      <a class="btn btn--primary" href="#" id="openNormalTop">Consulta por WhatsApp</a>
+    </div>
+
+    <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <div class="mobile" id="mobile" aria-hidden="true">
+    <div class="wrap mobile__inner">
+      <a class="mLink" href="#servicios">Servicios</a>
+      <a class="mLink" href="#proceso">Proceso</a>
+      <a class="mLink" href="#opiniones">Opiniones</a>
+      <a class="mLink" href="#faq">FAQ</a>
+      <a class="mLink" href="#contacto">Contacto</a>
+      <div class="mCtas">
+        <a class="btn btn--ghost w100" href="tel:+5215619953751">Llamar ahora</a>
+        <a class="btn btn--primary w100" href="#" id="openNormalMobile">Consulta por WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="wrap hero__grid">
+    <div>
+      <div class="kicker">ABOGADO PENALISTA EN CDMX</div>
+      <h1>Atención inmediata <span class="hl">24/7</span><br>Defensa penal estratégica.</h1>
+      <p class="lead">
+        Sede en CDMX y atención frecuente en EdoMex. Atención nacional según el caso.
+        Enfoque en defensa penal: detenciones, audiencias, medidas cautelares/prisión preventiva, juicio oral, carpeta de investigación y amparo penal.
+      </p>
+
+      <div class="hero__ctas">
+        <a class="btn btn--primary btn--lg" href="#" id="openUrgentHero">Urgente: WhatsApp 24/7</a>
+        <a class="btn btn--glass btn--lg" href="tel:+5215619953751">Llamar ahora</a>
+      </div>
+
+      <div class="chips" aria-label="Señales de confianza">
+        <span class="chip"><span class="dot"></span> Confidencialidad</span>
+        <span class="chip"><span class="dot"></span> UNAM (Lic. en Derecho)</span>
+        <span class="chip"><span class="dot"></span> CDMX / EdoMex / Nacional</span>
+      </div>
+    </div>
+
+    <!-- Panel solo botones -->
+    <aside class="heroPanel">
+      <div class="panelTitle">Consulta por WhatsApp</div>
+      <div class="panelSub">Elige el tipo de consulta. Te abrimos WhatsApp con un mensaje listo para enviar.</div>
+
+      <div class="panelBtns">
+        <a class="btn btn--primary btn--lg w100" href="#" id="openUrgentPanel">Urgente (detención / audiencia)</a>
+        <a class="btn btn--ghost btn--lg w100" href="#" id="openNormalPanel">Asesoría (consulta normal)</a>
+        <a class="btn btn--glass btn--lg w100" href="tel:+5215619953751">Llamar ahora</a>
+      </div>
+
+      <div class="hint">Tip: si es una urgencia, escribe “URGENTE” y la ciudad/colonia para priorizar.</div>
+    </aside>
+  </div>
+</section>
+
+<!-- METRICS -->
+<section class="metrics">
+  <div class="wrap metrics__inner">
+    <div>
+      <div class="metricN">+117</div>
+      <div class="metricL">Casos atendidos</div>
+    </div>
+    <div>
+      <div class="metricN">+83</div>
+      <div class="metricL">Clientes satisfechos</div>
+    </div>
+    <div>
+      <div class="metricN">24/7</div>
+      <div class="metricL">Atención inmediata</div>
+    </div>
+    <div>
+      <div class="metricN">+14</div>
+      <div class="metricL">Estados atendidos</div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICIOS -->
+<section class="section" id="servicios">
+  <div class="wrap">
+    <div class="head">
+      <h2>Servicios legales</h2>
+      <p>Defensa penal enfocada a urgencias y estrategia técnica. CDMX, EdoMex y atención nacional según el caso.</p>
+    </div>
+
+    <div class="grid3">
+      <article class="card">
+        <div class="cardTop">
+          <div class="icon">⚖️</div><div class="tag">Urgente</div>
+        </div>
+        <h3>Defensa en detención</h3>
+        <p>Asistencia inmediata y acompañamiento desde el primer momento.</p>
+      </article>
+
+      <article class="card">
+        <div class="cardTop">
+          <div class="icon">🏛️</div><div class="tag">Audiencias</div>
+        </div>
+        <h3>Control de detención y vinculación</h3>
+        <p>Preparación y estrategia para audiencias y medidas cautelares.</p>
+      </article>
+
+      <article class="card">
+        <div class="cardTop">
+          <div class="icon">⛓️</div><div class="tag">Medidas</div>
+        </div>
+        <h3>Prisión preventiva / Medidas cautelares</h3>
+        <p>Revisión y planteamiento técnico según la etapa del procedimiento.</p>
+      </article>
+
+      <article class="card">
+        <div class="cardTop">
+          <div class="icon">📁</div><div class="tag">Estrategia</div>
+        </div>
+        <h3>Carpeta de investigación</h3>
+        <p>Análisis y ruta legal: qué hacer, qué evitar y próximos pasos.</p>
+      </article>
+
+      <article class="card">
+        <div class="cardTop">
+          <div class="icon">🛡️</div><div class="tag">Amparo</div>
+        </div>
+        <h3>Amparo penal</h3>
+        <p>Defensa constitucional cuando aplica y evaluación de viabilidad.</p>
+      </article>
+
+      <article class="card">
+        <div class="cardTop">
+          <div class="icon">🧾</div><div class="tag">Juicio</div>
+        </div>
+        <h3>Juicio oral penal</h3>
+        <p>Preparación, audiencias y seguimiento del caso con estrategia.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESO (formal, como querías) -->
+<section class="section alt" id="proceso">
+  <div class="wrap">
+    <div class="head">
+      <h2>Proceso de atención</h2>
+      <p>Formal, claro y con seguimiento real.</p>
+    </div>
+
+    <div class="steps">
+      <div>
+        <div class="stepN">01</div>
+        <div class="stepT">Contacto</div>
+        <div class="stepP">WhatsApp o llamada. Priorizamos urgencias (detención/audiencia).</div>
+      </div>
+      <div>
+        <div class="stepN">02</div>
+        <div class="stepT">Estrategia</div>
+        <div class="stepP">Definimos ruta legal y siguientes pasos según la etapa del caso.</div>
+      </div>
+      <div>
+        <div class="stepN">03</div>
+        <div class="stepT">Representación</div>
+        <div class="stepP">Intervención y seguimiento del caso con comunicación constante.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIOS carrusel -->
+<section class="section" id="opiniones">
+  <div class="wrap">
+    <div class="head">
+      <h2>Testimonios</h2>
+      <p>Formato realista con iniciales por privacidad. (Luego puedes sustituir por reseñas reales.)</p>
+    </div>
+
+    <div class="carouselWrap">
+      <div class="carouselHeader">
+        <div class="left">Lo que dicen nuestros clientes</div>
+        <div class="right">Se actualiza automáticamente</div>
+      </div>
+
+      <div class="carousel" id="carousel">
+        <!-- Slide 1 -->
+        <div class="slide">
+          <div class="quote">
+            <div class="stars">★★★★★</div>
+            <p>“Respondió rápido y explicó claro el escenario. En la audiencia se notó orden y estrategia.”</p>
+            <div class="who">María Fernanda R. <span>— Del Valle, CDMX</span></div>
+          </div>
+          <div class="quote">
+            <div class="stars">★★★★★</div>
+            <p>“Trato discreto y directo. Nos dijo qué hacer y qué evitar desde el inicio. Eso ayudó muchísimo.”</p>
+            <div class="who">José Luis M. <span>— Naucalpan, EdoMex</span></div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="slide">
+          <div class="quote">
+            <div class="stars">★★★★★</div>
+            <p>“Muy profesional. Comunicación constante y pasos claros. Nos dio tranquilidad en un momento difícil.”</p>
+            <div class="who">Ana Sofía G. <span>— Querétaro</span></div>
+          </div>
+          <div class="quote">
+            <div class="stars">★★★★★</div>
+            <p>“Nos orientó con claridad y actuó rápido. Se nota que domina el proceso y no improvisa.”</p>
+            <div class="who">Ricardo P. <span>— Coyoacán, CDMX</span></div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="slide">
+          <div class="quote">
+            <div class="stars">★★★★★</div>
+            <p>“Excelente seguimiento. Siempre supimos qué venía y qué documentos eran importantes.”</p>
+            <div class="who">Karla S. <span>— Toluca, EdoMex</span></div>
+          </div>
+          <div class="quote">
+            <div class="stars">★★★★★</div>
+            <p>“Muy claro con escenarios y tiempos. Eso fue clave para tomar decisiones rápidas.”</p>
+            <div class="who">Eduardo C. <span>— Puebla</span></div>
+          </div>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="slide">
+          <div class="quote">
+            <div class="stars">★★★★★</div>
+            <p>“Atención inmediata. Nos atendió sin vueltas y nos dio una ruta concreta desde el primer día.”</p>
+            <div class="who">Daniela V. <span>— Gustavo A. Madero, CDMX</span></div>
+          </div>
+          <div class="quote">
+            <div class="stars">★★★★★</div>
+            <p>“Discreción total. Profesional y muy centrado en lo que sí mueve el caso.”</p>
+            <div class="who">Luis A. <span>— Monterrey (atención nacional)</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="dots" id="dots"></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section alt" id="faq">
+  <div class="wrap">
+    <div class="head">
+      <h2>Preguntas frecuentes</h2>
+      <p>Estas preguntas ayudan a posicionar y a convertir.</p>
+    </div>
+
+    <div class="faq">
+      <button class="q" type="button" aria-expanded="false">¿Atiendes urgencias 24/7? <span class="chev">⌄</span></button>
+      <div class="a" hidden>Sí. Para urgencias (detención o audiencia próxima), escribe por WhatsApp o llama.</div>
+
+      <button class="q" type="button" aria-expanded="false">¿Atiendes CDMX y Estado de México? <span class="chev">⌄</span></button>
+      <div class="a" hidden>Sí, con sede en CDMX y atención frecuente en EdoMex. También atención nacional según el caso.</div>
+
+      <button class="q" type="button" aria-expanded="false">¿Qué tipo de casos atiendes? <span class="chev">⌄</span></button>
+      <div class="a" hidden>Defensa penal: detenciones, audiencias, medidas cautelares/prisión preventiva, juicio oral, carpeta de investigación y amparo penal.</div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section class="contact" id="contacto">
+  <div class="wrap">
+    <div class="head">
+      <h2>Contacto</h2>
+      <p>Elige: urgencia o asesoría. Te abrimos WhatsApp con un mensaje listo.</p>
+    </div>
+
+    <div class="contactGrid">
+      <div class="ctaBox">
+        <div class="ctaTitle">Urgente (detención / audiencia)</div>
+        <div class="ctaSub">Para cuando necesitas respuesta inmediata. Ideal si hay audiencia próxima o detención.</div>
+        <div class="ctaBtns">
+          <a class="btn btn--primary btn--lg" href="#" id="openUrgentContact">WhatsApp urgente</a>
+          <a class="btn btn--ghost btn--lg" href="tel:+5215619953751">Llamar ahora</a>
+        </div>
+      </div>
+
+      <div class="ctaBox">
+        <div class="ctaTitle">Asesoría (consulta normal)</div>
+        <div class="ctaSub">Para orientación, revisión del caso o definir estrategia y siguientes pasos.</div>
+        <div class="ctaBtns">
+          <a class="btn btn--primary btn--lg" href="#" id="openNormalContact">Consulta por WhatsApp</a>
+          <a class="btn btn--ghost btn--lg" href="tel:+5215619953751">Llamar ahora</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap footer__inner">
+    <div>© <span id="year"></span> atadefensapenal.com.mx</div>
+    <div class="links">
+      <a href="#servicios">Servicios</a>
+      <a href="#proceso">Proceso</a>
+      <a href="#opiniones">Opiniones</a>
+      <a href="#contacto">Contacto</a>
+    </div>
+  </div>
+</footer>
+
+<a class="fab fab--wa" href="#" id="openNormalFab" aria-label="WhatsApp">💬</a>
+<a class="fab fab--call" href="tel:+5215619953751" aria-label="Llamar">📞</a>
+
+<!-- Modal -->
+<div class="modalBackdrop" id="modalBackdrop" aria-hidden="true">
+  <div class="modal" role="dialog" aria-modal="true">
+    <div class="modalTop">
+      <div class="modalTitle" id="modalTitle">Mensaje para WhatsApp</div>
+      <button class="x" id="closeModal" aria-label="Cerrar">✕</button>
+    </div>
+    <div class="modalBody">
+      <input id="mName" placeholder="Tu nombre" />
+      <input id="mCity" placeholder="Colonia / Ciudad" />
+      <textarea id="mCase" placeholder="Describe tu caso (breve)"></textarea>
+    </div>
+    <div class="modalActions">
+      <button class="btn btn--primary btn--lg" id="sendWa">Abrir WhatsApp</button>
+      <button class="btn btn--ghost btn--lg" id="cancelWa">Cancelar</button>
+    </div>
+  </div>
+</div>
+
+<script>
+  // ====== CONFIG ======
+  const WA_NUMBER = "5215619953751"; // +52 1 56 1995 3751
+  const TEL_LINK  = "tel:+5215619953751";
+  // ====================
+
+  // Header solid on scroll
+  const header = document.getElementById("header");
+  function onScroll(){ header.classList.toggle("isSolid", window.scrollY > 40); }
+  window.addEventListener("scroll", onScroll); onScroll();
+
+  // Mobile menu
+  const burger = document.getElementById("burger");
+  const mobile = document.getElementById("mobile");
+  function toggleMobile(open){
+    const isOpen = open ?? !mobile.classList.contains("show");
+    mobile.classList.toggle("show", isOpen);
+    burger.setAttribute("aria-expanded", String(isOpen));
+    mobile.setAttribute("aria-hidden", String(!isOpen));
+  }
+  burger.addEventListener("click", ()=>toggleMobile());
+  mobile.addEventListener("click", (e)=>{
+    if(e.target.classList.contains("mLink")) toggleMobile(false);
+  });
+
+  // FAQ accordion
+  document.querySelectorAll(".q").forEach(btn=>{
+    btn.addEventListener("click", ()=>{
+      const expanded = btn.getAttribute("aria-expanded")==="true";
+      document.querySelectorAll(".q").forEach(b=>{
+        b.setAttribute("aria-expanded","false");
+        const a=b.nextElementSibling; if(a) a.hidden=true;
+      });
+      btn.setAttribute("aria-expanded", String(!expanded));
+      const ans=btn.nextElementSibling; if(ans) ans.hidden=expanded;
+    });
+  });
+
+  // Year
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  // WhatsApp helper
+  const waLink = (text) => `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(text)}`;
+
+  // Modal logic
+  const backdrop = document.getElementById("modalBackdrop");
+  const closeModalBtn = document.getElementById("closeModal");
+  const cancelWa = document.getElementById("cancelWa");
+  const sendWa = document.getElementById("sendWa");
+  const modalTitle = document.getElementById("modalTitle");
+  const mName = document.getElementById("mName");
+  const mCity = document.getElementById("mCity");
+  const mCase = document.getElementById("mCase");
+
+  let currentMode = "normal"; // normal | urgent
+
+  function openModal(mode){
+    currentMode = mode;
+    modalTitle.textContent = mode === "urgent"
+      ? "URGENTE — Mensaje para WhatsApp"
+      : "Consulta — Mensaje para WhatsApp";
+
+    mName.value = "";
+    mCity.value = "";
+    mCase.value = "";
+    backdrop.classList.add("show");
+    backdrop.setAttribute("aria-hidden","false");
+    setTimeout(()=> mName.focus(), 80);
+  }
+  function closeModal(){
+    backdrop.classList.remove("show");
+    backdrop.setAttribute("aria-hidden","true");
+  }
+
+  closeModalBtn.addEventListener("click", closeModal);
+  cancelWa.addEventListener("click", closeModal);
+  backdrop.addEventListener("click", (e)=>{ if(e.target === backdrop) closeModal(); });
+
+  sendWa.addEventListener("click", ()=>{
+    const name = (mName.value || "________").trim();
+    const city = (mCity.value || "________").trim();
+    const cas  = (mCase.value || "________").trim();
+
+    const prefix = currentMode === "urgent" ? "URGENTE. " : "";
+    const text =
+`Hola Lic. David Ata, soy ${name}. ${prefix}
+Tengo este caso: ${cas}.
+Ubicación: ${city}.
+¿Me puede orientar por favor?`;
+
+    window.open(waLink(text), "_blank", "noopener");
+    closeModal();
+  });
+
+  // Bind buttons (solo WhatsApp / llamada)
+  const bind = (id, mode) => {
+    const el = document.getElementById(id);
+    if(!el) return;
+    el.addEventListener("click", (e)=>{ e.preventDefault(); openModal(mode); });
+  };
+
+  bind("openUrgentHero","urgent");
+  bind("openUrgentPanel","urgent");
+  bind("openUrgentContact","urgent");
+
+  bind("openNormalTop","normal");
+  bind("openNormalMobile","normal");
+  bind("openNormalPanel","normal");
+  bind("openNormalContact","normal");
+  bind("openNormalFab","normal");
+
+  // Carousel
+  const carousel = document.getElementById("carousel");
+  const dotsWrap = document.getElementById("dots");
+  const slides = Array.from(carousel.children);
+  let idx = 0;
+  let timer = null;
+
+  function renderDots(){
+    dotsWrap.innerHTML = "";
+    slides.forEach((_, i)=>{
+      const b = document.createElement("button");
+      b.className = "dotBtn" + (i===idx ? " active" : "");
+      b.addEventListener("click", ()=>goTo(i, true));
+      dotsWrap.appendChild(b);
+    });
+  }
+
+  function goTo(i, manual=false){
+    idx = (i + slides.length) % slides.length;
+    carousel.style.transform = `translateX(-${idx*100}%)`;
+    renderDots();
+    if(manual) restart();
+  }
+
+  function restart(){
+    if(timer) clearInterval(timer);
+    timer = setInterval(()=>goTo(idx+1), 5200);
+  }
+
+  renderDots();
+  restart();
+</script>
+
+</body>
+</html>
